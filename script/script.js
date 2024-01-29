@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Toggle the navigation menu when clicking the burger menu icon
 	burgerMenu.addEventListener('click', function () {
 		navList.classList.toggle('show');
-		loginOptions.classList.remove('show'); // Close login options when opening menu
+		loginOptions.classList.remove('show');
 	});
 });

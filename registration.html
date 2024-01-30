@@ -1,106 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="/styles/styles.css">
-	<link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-	<link rel="stylesheet" href="/styles/registration.css">
-	<title>Your Banana Boat Adventure</title>
+	<title>Регистрация пользователя</title>
+	<link rel="stylesheet" type="text/css" href="/styles/registration.css">
 </head>
 
 <body>
-
-	<header>
-
-	</header>
-
-	<nav>
-		<div class="container menu-logo">
-			<div class="burger-menu" id="burgerMenu">&#9776;</div>
-			<div class="logo">
-				<img src="/img/DALL·E 2024-01-29 01.13.05 - Create a vibrant logo for 'RW Adventures' that features a joyful monkey riding the waves on a banana boat. The design should be detailed and complex, .png"
-					alt="Company Logo">
-				<p>RW Adventures</p>
+	<div class="container">
+		<h2>Форма Регистрации</h2>
+		<form id="registrationForm">
+			<div class="form-group">
+				<label for="username">Имя пользователя:</label>
+				<input type="text" id="username" name="username" required>
 			</div>
-			<ul class="nav-list" id="navList">
-				<li><a href="/index.html">HOME</a></li>
-				<li><a href="#about">ABOUT US</a></li>
-				<li><a href="#reviews">REVIEWS</a></li>
-				<li><a href="#order">MAKE ORDER</a></li>
-				<li class="login-container">
-					<a href="#" id="loginLink">LOGIN</a>
-					<div class="login-options" id="loginOptions">
-						<a href="#" class="client-login">Client Login</a>
-						<a href="#" class="employee-login">Employee Login</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<section id="loginSection" class="login-section">
-		<div class="container">
-			<div class="login-options" id="loginOptionsSection">
-				<a href="#" class="client-login">Client Login</a>
-				<a href="#" class="employee-login">Employee Login</a>
-			</div>
-		</div>
-	</section>
-
-	<main class="main">
-		<!-- Replace with actual content -->
-		<h1>Welcome to RW Adventures</h1>
-		<div class="registration-form" id="registrationForm">
-			<h2>Client Registration</h2>
-			<form id="registrationForm" onsubmit="return validateForm()">
-				<label for="firstName">First Name:</label>
-				<input type="text" id="firstName" name="firstName" required>
-
-				<label for="lastName">Last Name:</label>
-				<input type="text" id="lastName" name="lastName" required>
-
+			<div class="form-group">
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" required>
-
-				<label for="password">Password:</label>
-				<input type="password" id="password" name="password" required>
-
-				<label for="confirmPassword">Confirm Password:</label>
-				<input type="password" id="confirmPassword" name="confirmPassword" required>
-
-				<input type="submit" value="Register">
-			</form>
-			<p class="error-message" id="errorMessage"></p>
-		</div>
-	</main>
-
-	<footer>
-		<div class="container">
-			<div class="footer-content">
-				<div class="copyright">
-					<p>&copy; 2024 RW Adventures. All rights reserved.</p>
-				</div>
-				<div class="social-icons">
-					<!-- Make sure the image link is correct -->
-					<a href="#" target="_blank"><img src="/img/facebook-icon.png" alt="Facebook"></a>
-				</div>
-				<div class="contact-info">
-					<p>Contact us: info@rwadventures.com</p>
-				</div>
 			</div>
-		</div>
-	</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-		crossorigin="anonymous"></script>
-	<script src="/script/script.js"></script>
+			<div class="form-group">
+				<label for="password">Пароль:</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<div class="form-group">
+				<button type="submit">Зарегистрироваться</button>
+			</div>
+		</form>
+		<div id="message"></div>
+	</div>
 	<script src="/script/registration.js"></script>
 </body>
 

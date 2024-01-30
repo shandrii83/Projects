@@ -33,4 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		navList.classList.toggle('show');
 		loginOptions.classList.remove('show');
 	});
+
+	const clientLoginLink = document.getElementById("clientLoginLink");
+
+	if (clientLoginLink) {
+		clientLoginLink.addEventListener("click", function (event) {
+			event.preventDefault(); // Отменяем стандартное действие ссылки
+			window.location.href = "registration.html"; // Замените на правильный путь к странице регистрации
+		});
+	}
+
 });

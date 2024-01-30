@@ -1,0 +1,41 @@
+/* Additional styles for the registration form */
+.registration-form {
+	margin-top: 20px;
+	display: none; /* Initially hidden */
+}
+
+.registration-form.show {
+	display: block; /* Show the registration form */
+}
+
+.registration-form label,
+.registration-form input {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.registration-form input[type="submit"] {
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+	background-color: #258cd1;
+}
+
+.error-message {
+	color: red;
+}

@@ -210,4 +210,7 @@ header i:hover {
 		text-align: center;
 		padding: 10px 0;
 	}
+	.login-section {
+		display: none;
+	}
 }

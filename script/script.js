@@ -4,10 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	const loginLink = document.getElementById('loginLink');
 	const loginOptions = document.getElementById('loginOptions');
 
-	// Toggle login options when clicking the "Login" link
-	loginLink.addEventListener('click', function (event) {
-		event.preventDefault(); // Prevent the default link behavior
-		loginOptions.classList.toggle('show');
+	// Show login options on mouse hover
+	loginLink.addEventListener('mouseenter', function () {
+		loginOptions.classList.add('show');
+	});
+
+	// Hide login options when mouse leaves the login link or options
+	loginLink.addEventListener('mouseleave', function () {
+		loginOptions.classList.remove('show');
+	});
+	loginOptions.addEventListener('mouseenter', function () {
+		loginOptions.classList.add('show');
+	});
+	loginOptions.addEventListener('mouseleave', function () {
+		loginOptions.classList.remove('show');
 	});
 
 	// Close the navigation menu when clicking outside of it
